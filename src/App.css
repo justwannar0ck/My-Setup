@@ -1,0 +1,97 @@
+.main{
+  width: 1695px;
+  height: 780px;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('./assets/BG.jpg');
+  position: relative;
+}
+
+.background.blur {
+  filter: blur(8px);
+}
+
+.icon1 {
+  position: absolute;
+  top: 9%;    
+  left: 15%;   
+  width: 200px; 
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.icon1:hover {
+  transform: scale(0.92);
+  cursor: pointer;
+}
+
+.playerContainer {
+  width: 800px;
+  height: 780px;
+  margin-left: 450px;
+}
+
+.playerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.playerOverlay .playerContainer {
+  pointer-events: auto;
+}
+
+.cassete{
+  background-image: url('./assets/player.jpg');
+  background-size: contain;      
+  background-repeat: no-repeat;  
+  background-position: center;   
+  width: 100%;
+  height: 90%;
+}
+
+#back {
+  position: relative;
+  top: 612px;
+  left: 495px;
+  width: 70px;
+  cursor: pointer;
+}
+
+#previous {
+  position: relative;
+  top: 468px;
+  left: 175px;
+  width: 95px;
+  cursor: pointer;
+}
+
+#next {
+  position: relative;
+  top: 467px;
+  left: 172px;
+  width: 95px;
+  cursor: pointer;
+}
+
+#play {
+  position: relative;
+  top: 468px;
+  left: 204px;
+  width: 88px;
+  cursor: pointer;
+}
+
+#back:active, #previous:active, #next:active, #play:active {
+  transform: scale(0.92);
+}

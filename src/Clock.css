@@ -1,0 +1,41 @@
+.circle {
+  background-image: url("./assets/circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 55%;    
+  left: 69%;   
+  width: 144px; 
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-top: 45px; 
+}
+
+#time {  
+  padding-left: 15px;
+  color: black; 
+  font-size: 15px;
+  font-family: monospace, 'Courier New', Consolas;
+  font-weight: bold;
+}
+
+#location {   
+  color: black;
+  font-size: 12px;
+  font-family: monospace, 'Courier New', Consolas;
+  padding-left: 8px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+#info{
+    color: black;
+    font-size: 20px;
+    font-family: monospace, 'Courier New', Consolas;
+    padding-left: 15px;
+    font-weight: bold;
+    margin: 0;
+}
